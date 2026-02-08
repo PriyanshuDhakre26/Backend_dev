@@ -1,0 +1,9 @@
+import express from 'express'
+const app=express();
+const router=express.Router();
+
+router.use((req, res) => {
+  res.status(404).render('404');
+});
+
+export default router;
